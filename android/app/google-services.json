@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75854224124",
+    "project_id": "litestore-e5fac",
+    "storage_bucket": "litestore-e5fac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75854224124:android:1b20fc64714869156f1579",
+        "android_client_info": {
+          "package_name": "com.example.lite_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa_P2vVaCr5UzF8TV434ztCjFB3KeA8uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
