@@ -5,8 +5,9 @@ class OPage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Color bgcolor = Color.fromRGBO(216, 245, 245, 1);
     return Container(
-      color: Colors.white,
+      color: bgcolor,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25),
         child: Column(
@@ -16,13 +17,14 @@ class OPage1 extends StatelessWidget {
               height: 10,
             ),
             Container(
+              width: double.infinity,
               child: Image.asset('lib/images/management.png'),
             ),
             Container(
               child: Text(
                 'Manage your Business',
                 style: TextStyle(
-                    color: Colors.black, decoration: TextDecoration.none),
+                    color: Colors.black, decoration: TextDecoration.none, fontSize: 35),
               ),
             ),
           ],

@@ -78,8 +78,9 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
+    final Color bgcolor = Color.fromRGBO(216, 245, 245, 1);
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 228, 227, 227),
+      backgroundColor: bgcolor,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -90,18 +91,14 @@ class _RegisterState extends State<Register> {
                   height: 40,
                 ),
                 Center(
-                  child: Icon(
-                    Icons.lock,
-                    size: 80,
-                    color: blue,
-                  ),
+                  child: Image.asset('lib/images/logo.png'),
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 Center(
                   child: Text(
-                    'Welcome! Let\'s get yuo signed in',
+                    'Welcome! Let\'s get you signed in',
                     style: TextStyle(
                       color: gray,
                       fontSize: 18,

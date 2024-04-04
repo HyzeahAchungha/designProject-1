@@ -28,6 +28,30 @@ class Shop extends ChangeNotifier {
       discription: 'Some discriptional text about the product',
       imagePath: 'lib/images/lenovo-thinkpad.jpg',
     ),
+    Product(
+      name: 'Alienware-m18',
+      price: 23000,
+      discription: 'Some discriptional text about the product',
+      imagePath: 'lib/images/alienware-m18.jpg',
+    ),
+    Product(
+      name: 'Lenovo-yoga-9i',
+      price: 123000,
+      discription: 'Some discriptional text about the product',
+      imagePath: 'lib/images/acer-chromebook-spin.jpg',
+    ),
+    Product(
+      name: 'Dell-xps-17',
+      price: 19000,
+      discription: 'Some discriptional text about the product',
+      imagePath: 'lib/images/dell-xps-17.jpg',
+    ),
+    Product(
+      name: 'Lenovo-thinkpad',
+      price: 90000,
+      discription: 'Some discriptional text about the product',
+      imagePath: 'lib/images/lenovo-thinkpad.jpg',
+    ),
   ];
 
   // user cart

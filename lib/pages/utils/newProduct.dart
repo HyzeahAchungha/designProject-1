@@ -6,10 +6,10 @@ import 'package:lite_store/pages/utils/product.dart';
 import 'package:lite_store/pages/utils/shop.dart';
 import 'package:provider/provider.dart';
 
-class ProductTile extends StatelessWidget {
+class newProduct extends StatelessWidget {
   final Product product;
 
-  const ProductTile({super.key, required this.product});
+  const newProduct({super.key, required this.product});
 
   void addToCart(BuildContext context) {
     showDialog(
@@ -42,7 +42,7 @@ class ProductTile extends StatelessWidget {
         width: 280,
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(5),
         ),
         margin: EdgeInsets.all(10),
         padding: EdgeInsets.all(1),
@@ -52,27 +52,52 @@ class ProductTile extends StatelessWidget {
           children: [
             Column(
               children: [
+                Container(
+                        width: 280,
+                        height: 50,
+                        child: Center(
+                          child: Text('GET UP TO 30% OFF', 
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+                          ),
+                        ),
+                      ),
                 AspectRatio(
-                  aspectRatio: 1.5,
+                  aspectRatio: 1.7,
                   child: Stack(
                     children: [
+                      
                       Positioned(
                         child: Container(
                           decoration: BoxDecoration(
                             color: bgcolor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(1),
                           ),
                           width: double.infinity,
                           padding: EdgeInsets.all(3),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(13),
+                            borderRadius: BorderRadius.circular(1),
                             clipBehavior: Clip.antiAliasWithSaveLayer,
                             child: Image.asset(product.imagePath),
                           ),
                         ),
                       ),
                       Positioned(
-                          right: 3,
+                        top: 12,
+                        left: 12,
+                        child: Container(
+                          height: 30,
+                          width: 70,
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Center(
+                          child: Text('new',style: TextStyle(color: Colors.white),),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                          right: 6,
                           bottom: 1,
                           child: Container(
                             decoration: BoxDecoration(
@@ -109,10 +134,6 @@ class ProductTile extends StatelessWidget {
                 SizedBox(
                   height: 2,
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Text(product.discription),
-                ),
               ],
             ),
             Padding(
@@ -120,7 +141,11 @@ class ProductTile extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('\$' + product.price.toStringAsFixed(2)),
+                  Text('\$' + (product.price - product.price*0.3).toStringAsFixed(2),
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                  ),
                   Container(
                     decoration: BoxDecoration(
                       color: scolor,

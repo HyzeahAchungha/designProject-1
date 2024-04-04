@@ -16,7 +16,7 @@ class LandingPage extends StatelessWidget {
       backgroundColor: pcolor,
       body: Container(
         child: GestureDetector(
-          onTap: () => Navigator.pushNamed(context, '/auth'),
+          onTap: () => Navigator.pushNamed(context, '/onboarding'),
           child: Center(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,

@@ -59,8 +59,9 @@ class _LoginState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
+    final Color bgcolor = Color.fromRGBO(216, 245, 245, 1);
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 228, 227, 227),
+      backgroundColor: bgcolor,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -71,11 +72,7 @@ class _LoginState extends State<Login> {
                   height: 40,
                 ),
                 Center(
-                  child: Icon(
-                    Icons.lock,
-                    size: 100,
-                    color: blue,
-                  ),
+                  child: Image.asset('lib/images/logo.png'),
                 ),
                 SizedBox(
                   height: 30,

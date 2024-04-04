@@ -68,8 +68,8 @@ class CartPage extends StatelessWidget {
           GestureDetector(
             onTap: () {},
             child: Mybutton(
-              w: 100,
-              h: 30,
+              w: 150,
+              h: 60,
               t: 'Check out',
             ),
           )

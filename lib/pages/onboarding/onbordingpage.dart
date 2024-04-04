@@ -14,10 +14,12 @@ class _OnbordingpageState extends State<Onbordingpage> {
   // keep track of page....
   PageController _controller = PageController();
   bool onLastPage = false;
+  final Color bgcolor = Color.fromRGBO(216, 245, 245, 1);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: bgcolor,
       body: Stack(
         children: [
           PageView(
@@ -47,7 +49,7 @@ class _OnbordingpageState extends State<Onbordingpage> {
 
                 SmoothPageIndicator(
                   controller: _controller,
-                  count: 4,
+                  count: 2,
                   effect: ExpandingDotsEffect(),
                 ),
 
@@ -55,7 +57,7 @@ class _OnbordingpageState extends State<Onbordingpage> {
                 onLastPage
                     ? GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, '/index');
+                          Navigator.pushNamed(context, '/auth');
                         },
                         child: Text('Done'),
                       )

@@ -5,11 +5,14 @@ class OPage2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Color bgcolor = Color.fromRGBO(216, 245, 245, 1);
     return Container(
-      color: Colors.white,
+      color: bgcolor,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
               height: 10,

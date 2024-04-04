@@ -21,11 +21,22 @@ class Mybutton extends StatefulWidget {
 class _MybuttonState extends State<Mybutton> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      width: widget.w,
-      height: widget.h,
-      child: Text(widget.t),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 9),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        alignment: Alignment.center,
+        width: widget.w,
+        height: widget.h,
+        child: Center(child: Text(
+          widget.t,
+        style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
+        ),
+      ),
     );
   }
 }

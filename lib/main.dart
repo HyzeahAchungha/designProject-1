@@ -5,6 +5,7 @@ import 'package:lite_store/pages/cartpage.dart';
 // import 'package:lite_store/pages/authPages/authPage.dart';
 import 'package:lite_store/pages/homepage.dart';
 import 'package:lite_store/pages/index.dart';
+import 'package:lite_store/pages/onboarding/onbordingpage.dart';
 import 'package:lite_store/pages/shoppage.dart';
 import 'package:lite_store/pages/utils/landingPage.dart';
 import 'package:lite_store/pages/utils/shop.dart';
@@ -49,6 +50,7 @@ class _MyAppState extends State<MyApp> {
         '/cart': (context) => CartPage(),
         '/auth': (context) => AuthPage(),
         '/landing': (contex) => LandingPage(),
+        '/onboarding': (contex) => Onbordingpage(),
       },
     );
   }
